@@ -1,0 +1,6 @@
+create haproxy user and group
+
+sudo groupadd --system haproxy && \
+  sudo useradd --system --gid haproxy haproxy && \
+  sudo mkdir --parents /var/lib/haproxy && \
+  sudo chown -R haproxy:haproxy /var/lib/haproxy
